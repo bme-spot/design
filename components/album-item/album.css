@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+.album {
+  border-radius: 2px;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.45);
+  cursor: pointer;
+  position: relative;
+  background-color: #FFF;
+  height: 300px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+}
+
+.album > img {
+  height: 100%;
+  display:block;
+  margin:auto;
+}
+
+.pure-g {
+  padding: 0.5em;
+}
+
+.pure-g > div[class*="pure-u"] {
+  padding: 0.5em;
+}
+.album-overlay {
+  color: #e1e1e1;
+  position: absolute;
+  width: 100%;
+  bottom: -4em;
+  padding: 1em;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 30%, rgba(0,0,0,0.75) 60%, rgba(0,0,0,0.85) 100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.album-overlay:hover {
+  bottom: 0;
+}
+
+.album-overlay-title {
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+hr {
+  border: 0;
+  border-bottom: solid 1px white;
+  margin: 0.7em -0.5em;
+  opacity: 0.6;
+}
+
+.album-overlay-etc {
+  font-size: 0.8em;
+  padding-bottom: 0.1em;
+}
